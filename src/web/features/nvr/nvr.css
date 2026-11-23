@@ -1,0 +1,460 @@
+/* ---------- NVR-konsol ---------- */
+
+.nvr-console {
+  background: linear-gradient(180deg, #0b0f17, #06080d);
+  border: 1px solid #262c38;
+  border-radius: var(--radius-l);
+  padding: 10px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.nvr-bar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 6px 10px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: #9fb0c8;
+}
+.nvr-bar b {
+  color: #e6edf7;
+}
+.nvr-bar small {
+  color: #5f6c80;
+}
+.nvr-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gold-400);
+  font-weight: 700;
+}
+.nvr-logo svg {
+  width: 16px;
+  height: 16px;
+}
+.nvr-rec {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ff5a6a;
+  font-weight: 700;
+}
+.nvr-clock {
+  margin-left: auto;
+  color: #e6edf7;
+}
+.rec-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff3b4f;
+  box-shadow: 0 0 6px #ff3b4f;
+  animation: rec 1.2s steps(2) infinite;
+}
+@keyframes rec {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.nvr-layouts {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nvr-grid {
+  display: grid;
+  gap: 6px;
+}
+.nvr-grid9 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.nvr-grid4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 980px) {
+  .nvr-grid9 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .nvr-grid9,
+  .nvr-grid4 {
+    grid-template-columns: 1fr;
+  }
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+.nvr-infotile {
+  aspect-ratio: 16 / 9;
+  padding: 16px;
+  border: 1px dashed #2b3342;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.88rem;
+  color: #9fb0c8;
+}
+.nvr-infotile p {
+  margin: 6px 0 0;
+}
+@media (max-width: 980px) {
+  .nvr-infotile {
+    aspect-ratio: auto;
+  }
+}
+.nvr-disclaimer {
+  font-size: 0.78rem;
+  color: var(--muted-2);
+}
+.nvr-disclaimer.center {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.nvr-pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #9fb0c8;
+}
+
+/* ---------- et kamera ---------- */
+
+.cam {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  overflow: hidden;
+  border-radius: 4px;
+  outline: 1px solid #1d2330;
+  isolation: isolate;
+}
+.cam-canvas,
+.cam-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cam-canvas {
+  filter: saturate(0.72) contrast(1.06) brightness(0.96);
+}
+.cam-canvas.overlay {
+  filter: none;
+  z-index: 2;
+}
+.cam-video {
+  filter: saturate(0.8) contrast(1.05);
+}
+.cam-clip {
+  z-index: 3;
+}
+.cam::after {
+  /* scanlines */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0 1px, transparent 1px 3px);
+  mix-blend-mode: multiply;
+}
+
+.osd {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 8px;
+  font-family: var(--font-mono);
+  font-size: clamp(9px, 0.75vw, 12px);
+  color: #f2f6ff;
+  text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.02em;
+}
+.cam-large .osd,
+.cam-solo .osd {
+  font-size: clamp(11px, 1vw, 15px);
+  padding: 10px 14px;
+}
+.osd-top,
+.osd-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.osd-ch {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.osd-ch b {
+  color: var(--gold-300);
+}
+.osd-time {
+  white-space: nowrap;
+}
+.osd-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #ff6b7a;
+  font-weight: 700;
+}
+.osd-live small {
+  color: #c8d1e0;
+  font-weight: 400;
+  border: 1px solid rgba(200, 209, 224, 0.5);
+  padding: 0 3px;
+  border-radius: 2px;
+  font-size: 0.8em;
+}
+.osd-status.s-online {
+  color: #6ff0a8;
+}
+.osd-status.s-maintenance {
+  color: #ffd36b;
+}
+.osd-status.s-offline {
+  color: #ff6b7a;
+}
+.osd-motion,
+.osd-fallback {
+  align-self: center;
+  padding: 2px 8px;
+  background: rgba(200, 20, 40, 0.75);
+  border-radius: 2px;
+  font-weight: 700;
+  animation: rec 0.9s steps(2) infinite;
+}
+.osd-fallback {
+  background: rgba(30, 40, 80, 0.8);
+  animation: none;
+}
+
+.cam-hit {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  background: transparent;
+  border: 0;
+  cursor: zoom-in;
+}
+.cam-hit:focus-visible {
+  outline: 3px solid var(--gold-400);
+  outline-offset: -3px;
+}
+.cam-actions {
+  position: absolute;
+  right: 8px;
+  bottom: 28px;
+  z-index: 7;
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.cam:hover .cam-actions,
+.cam:focus-within .cam-actions {
+  opacity: 1;
+  transform: none;
+}
+@media (hover: none) {
+  .cam-actions {
+    opacity: 1;
+    transform: none;
+  }
+}
+.cam-actions .icon-btn {
+  width: 32px;
+  height: 32px;
+}
+.cam:fullscreen {
+  border-radius: 0;
+  aspect-ratio: auto;
+}
+.cam:fullscreen .cam-canvas,
+.cam:fullscreen .cam-video {
+  object-fit: contain;
+}
+
+/* ---------- enkeltvisning ---------- */
+
+.nvr-single {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 10px;
+}
+@media (max-width: 980px) {
+  .nvr-single {
+    grid-template-columns: 1fr;
+  }
+}
+.nvr-single-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 2px 2px;
+}
+.nvr-hint {
+  font-size: 0.78rem;
+  color: #6f7c90;
+}
+.nvr-side {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+.nvr-info {
+  padding: 12px;
+  border: 1px solid #262c38;
+  border-radius: 8px;
+  background: #0d121b;
+}
+.nvr-info h2 {
+  font-size: 1.2rem;
+  margin: 4px 0;
+}
+.nvr-info p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #b4c0d4;
+}
+.nvr-channels {
+  display: grid;
+  gap: 3px;
+}
+.nvr-channels button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #1e2531;
+  background: #0b1018;
+  font-size: 0.84rem;
+  color: #c8d1e0;
+}
+.nvr-channels button .mono {
+  color: var(--gold-400);
+  font-size: 0.74rem;
+}
+.nvr-channels button[aria-current='true'] {
+  border-color: var(--gold-500);
+  background: #161d2a;
+  color: #fff;
+}
+.ch-dot {
+  margin-left: auto;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6ff0a8;
+}
+[data-status='maintenance'] > .ch-dot {
+  background: #ffd36b;
+}
+[data-status='offline'] > .ch-dot {
+  background: #ff6b7a;
+}
+.nvr-eventlog {
+  padding: 12px;
+  border: 1px solid #262c38;
+  border-radius: 8px;
+  background: #0d121b;
+}
+.nvr-eventlog h3 {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+  margin-bottom: 8px;
+}
+.nvr-eventlog ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  font-size: 0.82rem;
+  color: #b4c0d4;
+  max-height: 220px;
+  overflow: auto;
+}
+.nvr-eventlog li[data-active='true'] {
+  color: #ff8a96;
+  font-weight: 700;
+}
+.nvr-eventlog .mono {
+  color: #6f7c90;
+  margin-right: 6px;
+}
+
+/* ---------- separat vindue ---------- */
+
+.cam-solo-page {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: grid;
+  place-items: center;
+}
+.cam-solo-page .cam-solo {
+  width: 100vw;
+  max-height: 100vh;
+  border-radius: 0;
+}
+.cam-solo-back {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  opacity: 0.25;
+  transition: opacity 0.2s;
+}
+.cam-solo-back:hover,
+.cam-solo-back:focus-visible {
+  opacity: 1;
+}
+
+/* ---------- forside-preview ---------- */
+
+.nvr-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+@media (max-width: 560px) {
+  .nvr-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.tag-btn {
+  margin-left: auto;
+}

@@ -1,0 +1,10 @@
+{
+  "overrides": {},
+  "messages": [
+    {
+      "id": "velkommen",
+      "text": "Kontrolcentralen er bemandet døgnet rundt af 4 vagtnisser og én meget søvnig kat.",
+      "level": "info"
+    }
+  ]
+}

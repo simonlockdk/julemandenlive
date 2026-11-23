@@ -1,0 +1,122 @@
+/* Kontrolcentralens layout: kort i midten, flydata til venstre, nedtællinger til højre */
+
+.control-grid {
+  display: grid;
+  grid-template-columns: minmax(270px, 320px) minmax(0, 1fr) minmax(300px, 350px);
+  grid-template-areas: 'left map right';
+  gap: var(--gutter);
+  align-items: start;
+}
+.cg-map {
+  grid-area: map;
+  position: sticky;
+  top: calc(var(--header-h) + var(--gutter));
+  height: calc(100vh - var(--header-h) - 2 * var(--gutter));
+  min-height: 560px;
+  max-height: 900px;
+}
+.cg-left {
+  grid-area: left;
+  display: grid;
+  gap: var(--gutter);
+}
+.cg-right {
+  grid-area: right;
+  display: grid;
+  gap: var(--gutter);
+}
+
+@media (max-width: 1280px) {
+  .control-grid {
+    grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
+    grid-template-areas:
+      'left map'
+      'right right';
+  }
+  .cg-right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .control-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'map'
+      'left'
+      'right';
+  }
+  .cg-map {
+    position: relative;
+    top: 0;
+    height: 62vh;
+    min-height: 380px;
+    margin: calc(-1 * var(--gutter)) calc(-1 * var(--gutter)) 0;
+  }
+  .cg-map .map-shell {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .cg-left {
+    grid-template-columns: 1fr;
+  }
+  .cg-right {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 900px) {
+  .cg-left,
+  .cg-right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero-intro {
+  margin: var(--gutter) 0;
+  background:
+    linear-gradient(100deg, rgba(212, 42, 69, 0.18), rgba(23, 105, 74, 0.14) 60%, rgba(242, 201, 107, 0.08)),
+    var(--glass);
+}
+.hero-intro h2 {
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  margin: 4px 0 6px;
+}
+.hero-intro p {
+  margin: 0;
+  color: var(--snow-2);
+  max-width: 80ch;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gutter);
+  align-items: start;
+  margin-bottom: var(--gutter);
+}
+.dash-grid-2 {
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+}
+.dash-stack {
+  display: grid;
+  gap: var(--gutter);
+}
+@media (max-width: 1100px) {
+  .dash-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dash-stack {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .dash-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .dash-grid {
+    grid-template-columns: 1fr;
+  }
+}

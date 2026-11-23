@@ -1,0 +1,12 @@
+node_modules
+dist
+data
+media
+.git
+.env
+*.log
+shots
+deploy
+docs
+tests
+scripts

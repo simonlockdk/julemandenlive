@@ -1,0 +1,284 @@
+.panel-note {
+  margin: 10px 0 0;
+  font-size: 0.75rem;
+  color: var(--muted-2);
+}
+
+/* ---------- status ---------- */
+
+.status-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+.status-list li {
+  display: grid;
+  grid-template-columns: 12px 1fr auto;
+  align-items: center;
+  gap: 4px 10px;
+  padding: 7px 4px;
+  border-bottom: 1px dashed rgba(154, 169, 200, 0.14);
+  font-size: 0.9rem;
+}
+.status-led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ok);
+  box-shadow: 0 0 6px var(--ok);
+  animation: led 3s ease-in-out infinite;
+}
+li[data-level='info'] .status-led {
+  background: var(--info);
+  box-shadow: 0 0 6px var(--info);
+}
+li[data-level='warn'] .status-led {
+  background: var(--warn);
+  box-shadow: 0 0 6px var(--warn);
+}
+.status-list li:nth-child(3n) .status-led {
+  animation-delay: -1s;
+}
+.status-list li:nth-child(3n + 1) .status-led {
+  animation-delay: -2s;
+}
+@keyframes led {
+  50% {
+    opacity: 0.55;
+  }
+}
+.status-label {
+  color: var(--snow-2);
+}
+.status-value {
+  font-weight: 700;
+  text-align: right;
+}
+.status-bar {
+  grid-column: 2 / -1;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(3, 7, 18, 0.6);
+  overflow: hidden;
+}
+.status-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--green-500), var(--gold-400));
+}
+.status-messages {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 6px;
+}
+.status-messages li {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(127, 178, 255, 0.1);
+  border-left: 3px solid var(--info);
+  font-size: 0.88rem;
+}
+.status-messages li[data-level='warn'] {
+  background: rgba(255, 181, 71, 0.1);
+  border-color: var(--warn);
+}
+.status-messages li[data-level='ok'] {
+  background: rgba(76, 194, 138, 0.1);
+  border-color: var(--ok);
+}
+
+/* ---------- logbog ---------- */
+
+.log-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  font-size: 0.88rem;
+}
+.log-list li {
+  display: grid;
+  grid-template-columns: 44px 76px 1fr;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px dashed rgba(154, 169, 200, 0.12);
+  animation: log-in 0.6s var(--ease-out);
+}
+.log-time {
+  color: var(--gold-400);
+  font-size: 0.8rem;
+}
+.log-cat {
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding-top: 2px;
+}
+.log-cat[data-cat='kane'] {
+  color: var(--red-400);
+}
+.log-cat[data-cat='stald'] {
+  color: #d9b98a;
+}
+.log-cat[data-cat='sjov'] {
+  color: var(--green-400);
+}
+@keyframes log-in {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+}
+@media (max-width: 520px) {
+  .log-list li {
+    grid-template-columns: 44px 1fr;
+  }
+  .log-cat {
+    display: none;
+  }
+}
+
+/* ---------- vejr ---------- */
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.weather-temp {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #cfe2ff;
+  line-height: 1;
+  text-shadow: 0 0 16px rgba(127, 178, 255, 0.45);
+}
+.weather-summary {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.weather-sub {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.weather-icon {
+  width: 34px;
+  height: 34px;
+  margin-left: auto;
+  color: #cfe2ff;
+  opacity: 0.7;
+  animation: spin 30s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0;
+}
+.weather-grid div {
+  padding: 8px;
+  border-radius: 10px;
+  background: rgba(3, 7, 18, 0.4);
+  text-align: center;
+}
+.weather-grid dt {
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.weather-grid dd {
+  margin: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.weather-warn {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 12px 0 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 181, 71, 0.12);
+  color: var(--gold-300);
+  font-size: 0.86rem;
+}
+.weather-warn svg {
+  flex: none;
+  color: var(--warn);
+}
+
+/* ---------- fakta ---------- */
+
+.fact-text {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ---------- flyvejournal ---------- */
+
+.journal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.journal-list li {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(3, 7, 18, 0.4);
+  border: 1px solid rgba(154, 169, 200, 0.12);
+}
+.journal-list li[data-type='christmas'] {
+  border-color: rgba(212, 42, 69, 0.45);
+}
+.journal-list li[data-type='special'] {
+  border-color: rgba(242, 201, 107, 0.4);
+}
+.journal-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+.journal-date {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.journal-meta,
+.journal-cond {
+  font-size: 0.82rem;
+  color: var(--snow-2);
+}
+.journal-cond {
+  color: var(--muted);
+}
+
+/* ---------- dagens rensdyr ---------- */
+
+.teaser-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 650;
+  color: var(--gold-300);
+}
+.teaser-role {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}

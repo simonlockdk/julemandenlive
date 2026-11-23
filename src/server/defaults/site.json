@@ -1,0 +1,27 @@
+{
+  "title": "Nordpolens Kontrolcentral",
+  "tagline": "Danmarks hyggeligste juleportal – følg julemanden, nisserne og rensdyrene",
+  "heroTitle": "Velkommen til Nordpolens Kontrolcentral",
+  "heroText": "Her følger nisserne julemandens kane, holder øje med værkstederne og tæller ned til juleaften. Kig dig omkring – og hold øje med de små nisser, der gemmer sig rundt omkring på siden!",
+  "footerText": "Nordpolens Kontrolcentral er en magisk simulation lavet for sjov. Kanens position, kameraer og data er fantasi – ingen rigtige GPS-data og ingen rigtig overvågning. Vi bruger ingen cookies til besøgende og indsamler ingen personoplysninger.",
+  "banner": {
+    "enabled": false,
+    "text": "",
+    "level": "info"
+  },
+  "sections": {
+    "countdowns": true,
+    "advent": true,
+    "status": true,
+    "logbook": true,
+    "weather": true,
+    "fact": true,
+    "nvrPreview": true,
+    "journal": true
+  },
+  "features": {
+    "snow": true,
+    "nisseAlarm": true,
+    "hiddenNisser": true
+  }
+}

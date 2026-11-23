@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "id": "generalproeve",
+      "type": "banner",
+      "title": "Generalprøve lørdag",
+      "message": "Lørdag 28. november kl. 17 flyver julemanden generalprøve over Færøerne, Danmark og Grønland. Følg med på kortet!",
+      "start": "2026-11-23T00:00",
+      "end": "2026-11-28T20:00",
+      "enabled": true
+    },
+    {
+      "id": "lucia",
+      "type": "celebration",
+      "title": "Glædelig Lucia",
+      "message": "Nisserne går Luciaoptog gennem værkstedet i dag.",
+      "start": "2026-12-13T00:00",
+      "end": "2026-12-13T23:59",
+      "enabled": true
+    }
+  ]
+}

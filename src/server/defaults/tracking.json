@@ -1,0 +1,1083 @@
+{
+  "homeBase": {
+    "name": "Nordpolen",
+    "lat": 89.6,
+    "lon": 0
+  },
+  "testFlightSpeedKmh": 5200,
+  "testStopMinutes": 6,
+  "christmas": {
+    "enabled": true,
+    "localTargetTime": "19:00",
+    "bandMinutes": 60,
+    "stopMinutes": 2,
+    "cities": [
+      {
+        "name": "Auckland",
+        "country": "New Zealand",
+        "lat": -36.85,
+        "lon": 174.76,
+        "tz": "Pacific/Auckland",
+        "note": "Her er det midt i sommer – julemanden har solcreme med."
+      },
+      {
+        "name": "Wellington",
+        "country": "New Zealand",
+        "lat": -41.29,
+        "lon": 174.78,
+        "tz": "Pacific/Auckland"
+      },
+      {
+        "name": "Suva",
+        "country": "Fiji",
+        "lat": -18.14,
+        "lon": 178.44,
+        "tz": "Pacific/Fiji"
+      },
+      {
+        "name": "Sydney",
+        "country": "Australien",
+        "lat": -33.87,
+        "lon": 151.21,
+        "tz": "Australia/Sydney",
+        "note": "Julefrokost på stranden er populært her."
+      },
+      {
+        "name": "Melbourne",
+        "country": "Australien",
+        "lat": -37.81,
+        "lon": 144.96,
+        "tz": "Australia/Melbourne"
+      },
+      {
+        "name": "Brisbane",
+        "country": "Australien",
+        "lat": -27.47,
+        "lon": 153.03,
+        "tz": "Australia/Brisbane"
+      },
+      {
+        "name": "Port Moresby",
+        "country": "Papua Ny Guinea",
+        "lat": -9.44,
+        "lon": 147.18,
+        "tz": "Pacific/Port_Moresby"
+      },
+      {
+        "name": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68,
+        "lon": 139.69,
+        "tz": "Asia/Tokyo",
+        "note": "I Japan spiser mange familier jule-kage med jordbær."
+      },
+      {
+        "name": "Sapporo",
+        "country": "Japan",
+        "lat": 43.06,
+        "lon": 141.35,
+        "tz": "Asia/Tokyo"
+      },
+      {
+        "name": "Seoul",
+        "country": "Sydkorea",
+        "lat": 37.57,
+        "lon": 126.98,
+        "tz": "Asia/Seoul"
+      },
+      {
+        "name": "Manila",
+        "country": "Filippinerne",
+        "lat": 14.6,
+        "lon": 120.98,
+        "tz": "Asia/Manila",
+        "note": "Filippinerne fejrer en af verdens længste julesæsoner."
+      },
+      {
+        "name": "Taipei",
+        "country": "Taiwan",
+        "lat": 25.03,
+        "lon": 121.57,
+        "tz": "Asia/Taipei"
+      },
+      {
+        "name": "Hongkong",
+        "country": "Kina",
+        "lat": 22.32,
+        "lon": 114.17,
+        "tz": "Asia/Hong_Kong"
+      },
+      {
+        "name": "Perth",
+        "country": "Australien",
+        "lat": -31.95,
+        "lon": 115.86,
+        "tz": "Australia/Perth"
+      },
+      {
+        "name": "Singapore",
+        "country": "Singapore",
+        "lat": 1.35,
+        "lon": 103.82,
+        "tz": "Asia/Singapore"
+      },
+      {
+        "name": "Jakarta",
+        "country": "Indonesien",
+        "lat": -6.21,
+        "lon": 106.85,
+        "tz": "Asia/Jakarta"
+      },
+      {
+        "name": "Bangkok",
+        "country": "Thailand",
+        "lat": 13.76,
+        "lon": 100.5,
+        "tz": "Asia/Bangkok"
+      },
+      {
+        "name": "Hanoi",
+        "country": "Vietnam",
+        "lat": 21.03,
+        "lon": 105.85,
+        "tz": "Asia/Ho_Chi_Minh"
+      },
+      {
+        "name": "Dhaka",
+        "country": "Bangladesh",
+        "lat": 23.81,
+        "lon": 90.41,
+        "tz": "Asia/Dhaka"
+      },
+      {
+        "name": "Kathmandu",
+        "country": "Nepal",
+        "lat": 27.72,
+        "lon": 85.32,
+        "tz": "Asia/Kathmandu"
+      },
+      {
+        "name": "Mumbai",
+        "country": "Indien",
+        "lat": 19.08,
+        "lon": 72.88,
+        "tz": "Asia/Kolkata"
+      },
+      {
+        "name": "Bengaluru",
+        "country": "Indien",
+        "lat": 12.97,
+        "lon": 77.59,
+        "tz": "Asia/Kolkata"
+      },
+      {
+        "name": "Almaty",
+        "country": "Kasakhstan",
+        "lat": 43.24,
+        "lon": 76.89,
+        "tz": "Asia/Almaty"
+      },
+      {
+        "name": "Dubai",
+        "country": "Forenede Arabiske Emirater",
+        "lat": 25.2,
+        "lon": 55.27,
+        "tz": "Asia/Dubai"
+      },
+      {
+        "name": "Teheran",
+        "country": "Iran",
+        "lat": 35.69,
+        "lon": 51.39,
+        "tz": "Asia/Tehran"
+      },
+      {
+        "name": "Nairobi",
+        "country": "Kenya",
+        "lat": -1.29,
+        "lon": 36.82,
+        "tz": "Africa/Nairobi"
+      },
+      {
+        "name": "Addis Abeba",
+        "country": "Etiopien",
+        "lat": 9.03,
+        "lon": 38.74,
+        "tz": "Africa/Addis_Ababa"
+      },
+      {
+        "name": "Moskva",
+        "country": "Rusland",
+        "lat": 55.76,
+        "lon": 37.62,
+        "tz": "Europe/Moscow"
+      },
+      {
+        "name": "Sankt Petersborg",
+        "country": "Rusland",
+        "lat": 59.93,
+        "lon": 30.36,
+        "tz": "Europe/Moscow"
+      },
+      {
+        "name": "Istanbul",
+        "country": "Tyrkiet",
+        "lat": 41.01,
+        "lon": 28.98,
+        "tz": "Europe/Istanbul"
+      },
+      {
+        "name": "Kairo",
+        "country": "Egypten",
+        "lat": 30.04,
+        "lon": 31.24,
+        "tz": "Africa/Cairo"
+      },
+      {
+        "name": "Athen",
+        "country": "Grækenland",
+        "lat": 37.98,
+        "lon": 23.73,
+        "tz": "Europe/Athens"
+      },
+      {
+        "name": "Helsinki",
+        "country": "Finland",
+        "lat": 60.17,
+        "lon": 24.94,
+        "tz": "Europe/Helsinki",
+        "note": "Nabo til Lapland – rensdyrene hilser på deres fætre."
+      },
+      {
+        "name": "Rovaniemi",
+        "country": "Finland",
+        "lat": 66.5,
+        "lon": 25.73,
+        "tz": "Europe/Helsinki"
+      },
+      {
+        "name": "Tallinn",
+        "country": "Estland",
+        "lat": 59.44,
+        "lon": 24.75,
+        "tz": "Europe/Tallinn"
+      },
+      {
+        "name": "Riga",
+        "country": "Letland",
+        "lat": 56.95,
+        "lon": 24.11,
+        "tz": "Europe/Riga"
+      },
+      {
+        "name": "Vilnius",
+        "country": "Litauen",
+        "lat": 54.69,
+        "lon": 25.28,
+        "tz": "Europe/Vilnius"
+      },
+      {
+        "name": "Warszawa",
+        "country": "Polen",
+        "lat": 52.23,
+        "lon": 21.01,
+        "tz": "Europe/Warsaw"
+      },
+      {
+        "name": "Bukarest",
+        "country": "Rumænien",
+        "lat": 44.43,
+        "lon": 26.1,
+        "tz": "Europe/Bucharest"
+      },
+      {
+        "name": "Kyiv",
+        "country": "Ukraine",
+        "lat": 50.45,
+        "lon": 30.52,
+        "tz": "Europe/Kyiv"
+      },
+      {
+        "name": "Johannesburg",
+        "country": "Sydafrika",
+        "lat": -26.2,
+        "lon": 28.05,
+        "tz": "Africa/Johannesburg"
+      },
+      {
+        "name": "Kapstaden",
+        "country": "Sydafrika",
+        "lat": -33.92,
+        "lon": 18.42,
+        "tz": "Africa/Johannesburg"
+      },
+      {
+        "name": "Stockholm",
+        "country": "Sverige",
+        "lat": 59.33,
+        "lon": 18.07,
+        "tz": "Europe/Stockholm",
+        "note": "Svenske børn venter på Tomten."
+      },
+      {
+        "name": "Wien",
+        "country": "Østrig",
+        "lat": 48.21,
+        "lon": 16.37,
+        "tz": "Europe/Vienna"
+      },
+      {
+        "name": "Budapest",
+        "country": "Ungarn",
+        "lat": 47.5,
+        "lon": 19.04,
+        "tz": "Europe/Budapest"
+      },
+      {
+        "name": "Kraków",
+        "country": "Polen",
+        "lat": 50.06,
+        "lon": 19.94,
+        "tz": "Europe/Warsaw"
+      },
+      {
+        "name": "Kiruna",
+        "country": "Sverige",
+        "lat": 67.86,
+        "lon": 20.23,
+        "tz": "Europe/Stockholm"
+      },
+      {
+        "name": "Lagos",
+        "country": "Nigeria",
+        "lat": 6.52,
+        "lon": 3.38,
+        "tz": "Africa/Lagos"
+      },
+      {
+        "name": "Rønne",
+        "country": "Danmark",
+        "lat": 55.1,
+        "lon": 14.7,
+        "tz": "Europe/Copenhagen",
+        "note": "Bornholm – solskinsøen får besøg."
+      },
+      {
+        "name": "København",
+        "country": "Danmark",
+        "lat": 55.68,
+        "lon": 12.57,
+        "tz": "Europe/Copenhagen",
+        "note": "Hovedstaden! Julemanden vinker til Rundetårn."
+      },
+      {
+        "name": "Roskilde",
+        "country": "Danmark",
+        "lat": 55.64,
+        "lon": 12.08,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Næstved",
+        "country": "Danmark",
+        "lat": 55.23,
+        "lon": 11.76,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Nykøbing Falster",
+        "country": "Danmark",
+        "lat": 54.77,
+        "lon": 11.87,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Odense",
+        "country": "Danmark",
+        "lat": 55.4,
+        "lon": 10.39,
+        "tz": "Europe/Copenhagen",
+        "note": "H.C. Andersens by – eventyrlig stemning."
+      },
+      {
+        "name": "Svendborg",
+        "country": "Danmark",
+        "lat": 55.06,
+        "lon": 10.61,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Aarhus",
+        "country": "Danmark",
+        "lat": 56.16,
+        "lon": 10.2,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Randers",
+        "country": "Danmark",
+        "lat": 56.46,
+        "lon": 10.04,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Aalborg",
+        "country": "Danmark",
+        "lat": 57.05,
+        "lon": 9.92,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Skagen",
+        "country": "Danmark",
+        "lat": 57.72,
+        "lon": 10.58,
+        "tz": "Europe/Copenhagen",
+        "note": "Danmarks nordligste spids – her vendes kanen."
+      },
+      {
+        "name": "Vejle",
+        "country": "Danmark",
+        "lat": 55.71,
+        "lon": 9.54,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Kolding",
+        "country": "Danmark",
+        "lat": 55.49,
+        "lon": 9.47,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Sønderborg",
+        "country": "Danmark",
+        "lat": 54.91,
+        "lon": 9.79,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Herning",
+        "country": "Danmark",
+        "lat": 56.14,
+        "lon": 8.97,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Viborg",
+        "country": "Danmark",
+        "lat": 56.45,
+        "lon": 9.4,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Esbjerg",
+        "country": "Danmark",
+        "lat": 55.48,
+        "lon": 8.45,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Oslo",
+        "country": "Norge",
+        "lat": 59.91,
+        "lon": 10.75,
+        "tz": "Europe/Oslo"
+      },
+      {
+        "name": "Bergen",
+        "country": "Norge",
+        "lat": 60.39,
+        "lon": 5.32,
+        "tz": "Europe/Oslo"
+      },
+      {
+        "name": "Tromsø",
+        "country": "Norge",
+        "lat": 69.65,
+        "lon": 18.96,
+        "tz": "Europe/Oslo"
+      },
+      {
+        "name": "Göteborg",
+        "country": "Sverige",
+        "lat": 57.71,
+        "lon": 11.97,
+        "tz": "Europe/Stockholm"
+      },
+      {
+        "name": "Malmö",
+        "country": "Sverige",
+        "lat": 55.6,
+        "lon": 13.0,
+        "tz": "Europe/Stockholm"
+      },
+      {
+        "name": "Berlin",
+        "country": "Tyskland",
+        "lat": 52.52,
+        "lon": 13.4,
+        "tz": "Europe/Berlin"
+      },
+      {
+        "name": "Hamborg",
+        "country": "Tyskland",
+        "lat": 53.55,
+        "lon": 9.99,
+        "tz": "Europe/Berlin"
+      },
+      {
+        "name": "Flensborg",
+        "country": "Tyskland",
+        "lat": 54.78,
+        "lon": 9.44,
+        "tz": "Europe/Berlin"
+      },
+      {
+        "name": "München",
+        "country": "Tyskland",
+        "lat": 48.14,
+        "lon": 11.58,
+        "tz": "Europe/Berlin"
+      },
+      {
+        "name": "Frankfurt",
+        "country": "Tyskland",
+        "lat": 50.11,
+        "lon": 8.68,
+        "tz": "Europe/Berlin"
+      },
+      {
+        "name": "Prag",
+        "country": "Tjekkiet",
+        "lat": 50.08,
+        "lon": 14.44,
+        "tz": "Europe/Prague"
+      },
+      {
+        "name": "Zürich",
+        "country": "Schweiz",
+        "lat": 47.38,
+        "lon": 8.54,
+        "tz": "Europe/Zurich"
+      },
+      {
+        "name": "Milano",
+        "country": "Italien",
+        "lat": 45.46,
+        "lon": 9.19,
+        "tz": "Europe/Rome"
+      },
+      {
+        "name": "Rom",
+        "country": "Italien",
+        "lat": 41.9,
+        "lon": 12.5,
+        "tz": "Europe/Rome"
+      },
+      {
+        "name": "Amsterdam",
+        "country": "Holland",
+        "lat": 52.37,
+        "lon": 4.9,
+        "tz": "Europe/Amsterdam"
+      },
+      {
+        "name": "Bruxelles",
+        "country": "Belgien",
+        "lat": 50.85,
+        "lon": 4.35,
+        "tz": "Europe/Brussels"
+      },
+      {
+        "name": "Paris",
+        "country": "Frankrig",
+        "lat": 48.86,
+        "lon": 2.35,
+        "tz": "Europe/Paris",
+        "note": "Eiffeltårnet er pyntet med lys."
+      },
+      {
+        "name": "Barcelona",
+        "country": "Spanien",
+        "lat": 41.39,
+        "lon": 2.17,
+        "tz": "Europe/Madrid"
+      },
+      {
+        "name": "Madrid",
+        "country": "Spanien",
+        "lat": 40.42,
+        "lon": -3.7,
+        "tz": "Europe/Madrid"
+      },
+      {
+        "name": "London",
+        "country": "Storbritannien",
+        "lat": 51.51,
+        "lon": -0.13,
+        "tz": "Europe/London"
+      },
+      {
+        "name": "Edinburgh",
+        "country": "Storbritannien",
+        "lat": 55.95,
+        "lon": -3.19,
+        "tz": "Europe/London"
+      },
+      {
+        "name": "Dublin",
+        "country": "Irland",
+        "lat": 53.35,
+        "lon": -6.26,
+        "tz": "Europe/Dublin"
+      },
+      {
+        "name": "Lissabon",
+        "country": "Portugal",
+        "lat": 38.72,
+        "lon": -9.14,
+        "tz": "Europe/Lisbon"
+      },
+      {
+        "name": "Tórshavn",
+        "country": "Færøerne",
+        "lat": 62.01,
+        "lon": -6.77,
+        "tz": "Atlantic/Faroe",
+        "note": "Hilsen til Færøerne!"
+      },
+      {
+        "name": "Reykjavík",
+        "country": "Island",
+        "lat": 64.15,
+        "lon": -21.94,
+        "tz": "Atlantic/Reykjavik",
+        "note": "I Island kommer der hele 13 julesvende."
+      },
+      {
+        "name": "Nuuk",
+        "country": "Grønland",
+        "lat": 64.18,
+        "lon": -51.72,
+        "tz": "America/Nuuk",
+        "note": "Grønland – tæt på Nordpolen og et af julemandens yndlingssteder."
+      },
+      {
+        "name": "Ilulissat",
+        "country": "Grønland",
+        "lat": 69.22,
+        "lon": -51.1,
+        "tz": "America/Nuuk"
+      },
+      {
+        "name": "Rio de Janeiro",
+        "country": "Brasilien",
+        "lat": -22.91,
+        "lon": -43.17,
+        "tz": "America/Sao_Paulo"
+      },
+      {
+        "name": "São Paulo",
+        "country": "Brasilien",
+        "lat": -23.55,
+        "lon": -46.63,
+        "tz": "America/Sao_Paulo"
+      },
+      {
+        "name": "Buenos Aires",
+        "country": "Argentina",
+        "lat": -34.6,
+        "lon": -58.38,
+        "tz": "America/Argentina/Buenos_Aires"
+      },
+      {
+        "name": "Halifax",
+        "country": "Canada",
+        "lat": 44.65,
+        "lon": -63.57,
+        "tz": "America/Halifax"
+      },
+      {
+        "name": "Santiago",
+        "country": "Chile",
+        "lat": -33.45,
+        "lon": -70.67,
+        "tz": "America/Santiago"
+      },
+      {
+        "name": "New York",
+        "country": "USA",
+        "lat": 40.71,
+        "lon": -74.01,
+        "tz": "America/New_York",
+        "note": "Det store juletræ ved Rockefeller Center lyser."
+      },
+      {
+        "name": "Toronto",
+        "country": "Canada",
+        "lat": 43.65,
+        "lon": -79.38,
+        "tz": "America/Toronto"
+      },
+      {
+        "name": "Bogotá",
+        "country": "Colombia",
+        "lat": 4.71,
+        "lon": -74.07,
+        "tz": "America/Bogota"
+      },
+      {
+        "name": "Lima",
+        "country": "Peru",
+        "lat": -12.05,
+        "lon": -77.04,
+        "tz": "America/Lima"
+      },
+      {
+        "name": "Chicago",
+        "country": "USA",
+        "lat": 41.88,
+        "lon": -87.63,
+        "tz": "America/Chicago"
+      },
+      {
+        "name": "Mexico City",
+        "country": "Mexico",
+        "lat": 19.43,
+        "lon": -99.13,
+        "tz": "America/Mexico_City"
+      },
+      {
+        "name": "Houston",
+        "country": "USA",
+        "lat": 29.76,
+        "lon": -95.37,
+        "tz": "America/Chicago"
+      },
+      {
+        "name": "Denver",
+        "country": "USA",
+        "lat": 39.74,
+        "lon": -104.99,
+        "tz": "America/Denver"
+      },
+      {
+        "name": "Calgary",
+        "country": "Canada",
+        "lat": 51.05,
+        "lon": -114.07,
+        "tz": "America/Edmonton"
+      },
+      {
+        "name": "Los Angeles",
+        "country": "USA",
+        "lat": 34.05,
+        "lon": -118.24,
+        "tz": "America/Los_Angeles"
+      },
+      {
+        "name": "San Francisco",
+        "country": "USA",
+        "lat": 37.77,
+        "lon": -122.42,
+        "tz": "America/Los_Angeles"
+      },
+      {
+        "name": "Vancouver",
+        "country": "Canada",
+        "lat": 49.28,
+        "lon": -123.12,
+        "tz": "America/Vancouver"
+      },
+      {
+        "name": "Anchorage",
+        "country": "USA",
+        "lat": 61.22,
+        "lon": -149.9,
+        "tz": "America/Anchorage"
+      },
+      {
+        "name": "Honolulu",
+        "country": "USA",
+        "lat": 21.31,
+        "lon": -157.86,
+        "tz": "Pacific/Honolulu",
+        "note": "Sidste stop – aloha og glædelig jul!"
+      }
+    ]
+  },
+  "autoTestFlights": {
+    "enabled": true,
+    "seed": "nordpolen",
+    "periods": [
+      {
+        "from": "11-15",
+        "to": "11-30",
+        "weekdays": [
+          0,
+          6
+        ],
+        "chance": 0.8,
+        "windowStart": "16:00",
+        "windowEnd": "18:30",
+        "minStops": 2,
+        "maxStops": 3
+      },
+      {
+        "from": "12-01",
+        "to": "12-23",
+        "chance": 1,
+        "windowStart": "16:30",
+        "windowEnd": "19:00",
+        "minStops": 2,
+        "maxStops": 4
+      }
+    ],
+    "cityPool": [
+      {
+        "name": "Helsinki",
+        "country": "Finland",
+        "lat": 60.17,
+        "lon": 24.94,
+        "tz": "Europe/Helsinki"
+      },
+      {
+        "name": "Rovaniemi",
+        "country": "Finland",
+        "lat": 66.5,
+        "lon": 25.73,
+        "tz": "Europe/Helsinki"
+      },
+      {
+        "name": "Tallinn",
+        "country": "Estland",
+        "lat": 59.44,
+        "lon": 24.75,
+        "tz": "Europe/Tallinn"
+      },
+      {
+        "name": "Riga",
+        "country": "Letland",
+        "lat": 56.95,
+        "lon": 24.11,
+        "tz": "Europe/Riga"
+      },
+      {
+        "name": "Stockholm",
+        "country": "Sverige",
+        "lat": 59.33,
+        "lon": 18.07,
+        "tz": "Europe/Stockholm"
+      },
+      {
+        "name": "Kiruna",
+        "country": "Sverige",
+        "lat": 67.86,
+        "lon": 20.23,
+        "tz": "Europe/Stockholm"
+      },
+      {
+        "name": "Rønne",
+        "country": "Danmark",
+        "lat": 55.1,
+        "lon": 14.7,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "København",
+        "country": "Danmark",
+        "lat": 55.68,
+        "lon": 12.57,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Odense",
+        "country": "Danmark",
+        "lat": 55.4,
+        "lon": 10.39,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Aarhus",
+        "country": "Danmark",
+        "lat": 56.16,
+        "lon": 10.2,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Aalborg",
+        "country": "Danmark",
+        "lat": 57.05,
+        "lon": 9.92,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Skagen",
+        "country": "Danmark",
+        "lat": 57.72,
+        "lon": 10.58,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Vejle",
+        "country": "Danmark",
+        "lat": 55.71,
+        "lon": 9.54,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Sønderborg",
+        "country": "Danmark",
+        "lat": 54.91,
+        "lon": 9.79,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Herning",
+        "country": "Danmark",
+        "lat": 56.14,
+        "lon": 8.97,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Viborg",
+        "country": "Danmark",
+        "lat": 56.45,
+        "lon": 9.4,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Esbjerg",
+        "country": "Danmark",
+        "lat": 55.48,
+        "lon": 8.45,
+        "tz": "Europe/Copenhagen"
+      },
+      {
+        "name": "Oslo",
+        "country": "Norge",
+        "lat": 59.91,
+        "lon": 10.75,
+        "tz": "Europe/Oslo"
+      },
+      {
+        "name": "Bergen",
+        "country": "Norge",
+        "lat": 60.39,
+        "lon": 5.32,
+        "tz": "Europe/Oslo"
+      },
+      {
+        "name": "Tromsø",
+        "country": "Norge",
+        "lat": 69.65,
+        "lon": 18.96,
+        "tz": "Europe/Oslo"
+      },
+      {
+        "name": "Göteborg",
+        "country": "Sverige",
+        "lat": 57.71,
+        "lon": 11.97,
+        "tz": "Europe/Stockholm"
+      },
+      {
+        "name": "Berlin",
+        "country": "Tyskland",
+        "lat": 52.52,
+        "lon": 13.4,
+        "tz": "Europe/Berlin"
+      },
+      {
+        "name": "Hamborg",
+        "country": "Tyskland",
+        "lat": 53.55,
+        "lon": 9.99,
+        "tz": "Europe/Berlin"
+      },
+      {
+        "name": "Amsterdam",
+        "country": "Holland",
+        "lat": 52.37,
+        "lon": 4.9,
+        "tz": "Europe/Amsterdam"
+      },
+      {
+        "name": "Paris",
+        "country": "Frankrig",
+        "lat": 48.86,
+        "lon": 2.35,
+        "tz": "Europe/Paris"
+      },
+      {
+        "name": "London",
+        "country": "Storbritannien",
+        "lat": 51.51,
+        "lon": -0.13,
+        "tz": "Europe/London"
+      },
+      {
+        "name": "Edinburgh",
+        "country": "Storbritannien",
+        "lat": 55.95,
+        "lon": -3.19,
+        "tz": "Europe/London"
+      },
+      {
+        "name": "Tórshavn",
+        "country": "Færøerne",
+        "lat": 62.01,
+        "lon": -6.77,
+        "tz": "Atlantic/Faroe"
+      },
+      {
+        "name": "Reykjavík",
+        "country": "Island",
+        "lat": 64.15,
+        "lon": -21.94,
+        "tz": "Atlantic/Reykjavik"
+      },
+      {
+        "name": "Nuuk",
+        "country": "Grønland",
+        "lat": 64.18,
+        "lon": -51.72,
+        "tz": "America/Nuuk"
+      }
+    ]
+  },
+  "scheduledFlights": [
+    {
+      "id": "generalproeve",
+      "title": "Generalprøve før december",
+      "description": "Den store generalprøve: Julemanden tester hele kanen med fuld last af (tomme) gavesække.",
+      "start": "2026-11-28T17:00",
+      "stops": [
+        {
+          "name": "Tórshavn",
+          "lat": 62.01,
+          "lon": -6.77
+        },
+        {
+          "name": "København",
+          "lat": 55.68,
+          "lon": 12.57
+        },
+        {
+          "name": "Aarhus",
+          "lat": 56.16,
+          "lon": 10.2
+        },
+        {
+          "name": "Nuuk",
+          "lat": 64.18,
+          "lon": -51.72
+        }
+      ],
+      "enabled": true,
+      "type": "special"
+    }
+  ],
+  "cancelledAutoDates": []
+}

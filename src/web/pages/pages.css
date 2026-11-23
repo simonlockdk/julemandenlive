@@ -1,0 +1,426 @@
+/* ---------- rensdyr ---------- */
+
+.team-panel {
+  margin-bottom: var(--gutter);
+}
+.team {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  margin: 10px 0;
+}
+.team-row {
+  display: flex;
+  gap: 10px;
+}
+.team-deer {
+  display: inline-block;
+  min-width: 96px;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border-strong);
+  background: rgba(3, 7, 18, 0.45);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.team-row.lead .team-deer {
+  border-color: var(--red-400);
+  box-shadow: 0 0 14px rgba(236, 91, 111, 0.4);
+}
+.sleigh-row span {
+  padding: 8px 40px;
+  border-radius: 12px 12px 30px 30px;
+  background: linear-gradient(180deg, var(--red-500), var(--red-700));
+  border: 2px solid var(--gold-400);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+.deer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--gutter);
+  margin-bottom: var(--gutter);
+}
+@media (max-width: 420px) {
+  .deer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.deer-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  align-items: start;
+  scroll-margin-top: calc(var(--header-h) + 20px);
+}
+@media (max-width: 420px) {
+  .deer-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+}
+.deer-portrait {
+  width: 120px;
+  height: 120px;
+}
+.nose-pulse {
+  animation: nose-glow 1.6s ease-in-out infinite;
+}
+.deer-card h2 {
+  font-size: 1.5rem;
+  margin: 2px 0;
+}
+.deer-role {
+  color: var(--gold-300);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.deer-card p {
+  font-size: 0.92rem;
+  color: var(--snow-2);
+  margin-bottom: 8px;
+}
+.deer-snack {
+  color: var(--muted) !important;
+  font-size: 0.85rem !important;
+}
+.deer-stats {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+}
+.deer-stat {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: left;
+}
+.deer-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(3, 7, 18, 0.6);
+  overflow: hidden;
+}
+.deer-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--red-500), var(--gold-400));
+}
+
+/* ---------- missioner ---------- */
+
+.missions-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: var(--gutter);
+  align-items: start;
+  margin-bottom: var(--gutter);
+}
+@media (max-width: 900px) {
+  .missions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.wish-paper {
+  padding: 22px;
+  border-radius: 12px;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 31px, rgba(80, 60, 30, 0.13) 31px 32px),
+    linear-gradient(180deg, #fbf5e6, #f0e4c8);
+  color: #3a2a1a;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+.wish-paper .field label {
+  color: #5a4630;
+}
+.wish-paper .input {
+  background: rgba(255, 255, 255, 0.6);
+  color: #3a2a1a;
+  border-color: rgba(90, 70, 48, 0.35);
+}
+.wish-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.wish-emblem {
+  width: 52px;
+  height: 52px;
+}
+.wish-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #8e0f25;
+}
+.wish-sub {
+  font-family: var(--font-display);
+  font-style: italic;
+}
+.wish-items {
+  margin: 0 0 12px;
+  padding-left: 22px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+.wish-items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 32px;
+}
+.wish-items .icon-btn {
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #8e0f25;
+  border-color: rgba(142, 15, 37, 0.3);
+}
+.wish-empty {
+  list-style: none;
+  margin-left: -22px;
+  font-style: italic;
+  color: #7a6a50;
+  font-size: 1rem !important;
+}
+.wish-add {
+  display: flex;
+  gap: 8px;
+}
+.wish-sign {
+  margin-top: 18px;
+  text-align: right;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.wish-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.wish-sent {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(242, 201, 107, 0.12);
+}
+.envelope {
+  font-size: 2.4rem;
+  animation: fly-away 2.4s var(--ease-out) forwards;
+}
+@keyframes fly-away {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  40% {
+    transform: translate(10px, -10px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(260px, -120px) rotate(20deg) scale(0.3);
+    opacity: 0;
+  }
+}
+.mission-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.mission-list li {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(3, 7, 18, 0.35);
+  border: 1px solid rgba(154, 169, 200, 0.12);
+}
+.mission-list li[data-done='true'] {
+  border-color: rgba(76, 194, 138, 0.45);
+  background: rgba(76, 194, 138, 0.08);
+}
+.mission-check,
+.mission-box {
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  border: 2px solid rgba(154, 169, 200, 0.5);
+  display: grid;
+  place-items: center;
+  margin: 2px 0 0;
+  color: var(--ok);
+}
+.mission-box {
+  appearance: none;
+  cursor: pointer;
+}
+.mission-box:checked {
+  background: var(--ok);
+  border-color: var(--ok);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23050b1a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 12.5l5 5 10-11'/%3E%3C/svg%3E");
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+li[data-done='true'] .mission-check {
+  border-color: var(--ok);
+}
+.mission-check svg {
+  width: 16px;
+  height: 16px;
+}
+.mission-title {
+  font-weight: 800;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mission-text {
+  font-size: 0.88rem;
+  color: var(--snow-2);
+}
+.nisse-grid {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+.nisse-grid li {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 12px 8px;
+  border-radius: 12px;
+  background: rgba(3, 7, 18, 0.35);
+  border: 1px solid rgba(154, 169, 200, 0.12);
+}
+.nisse-grid li[data-found='false'] .nisse-slot {
+  filter: brightness(0) opacity(0.35);
+}
+.nisse-grid li[data-found='true'] {
+  border-color: rgba(242, 201, 107, 0.45);
+}
+.nisse-slot {
+  width: 44px;
+  height: 50px;
+}
+.nisse-grid small {
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+.diploma {
+  margin-top: 20px;
+}
+.diploma-inner {
+  text-align: center;
+  padding: 30px 24px;
+  border-radius: 14px;
+  border: 6px double var(--gold-500);
+  background: linear-gradient(180deg, #fbf5e6, #f0e4c8);
+  color: #3a2a1a;
+}
+.diploma-inner .eyebrow {
+  color: #8e0f25;
+}
+.diploma-inner h3 {
+  font-size: 2.4rem;
+  color: #8e0f25;
+  margin: 6px 0;
+}
+.diploma-emblem {
+  width: 70px;
+  margin: 0 auto 6px;
+}
+.diploma-name {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-style: italic;
+  border-bottom: 1px solid rgba(58, 42, 26, 0.4);
+  display: inline-block;
+  padding: 0 20px 4px;
+  margin-bottom: 10px;
+}
+.diploma-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f4d36;
+}
+.diploma-date {
+  margin-top: 12px;
+  font-size: 0.85rem;
+}
+.diploma-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* ---------- om ---------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gutter);
+}
+
+/* ---------- print (ønskeseddel og diplom) ---------- */
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #000;
+  }
+  .site-header,
+  .bottom-nav,
+  .site-footer,
+  .toasts,
+  .snow-canvas,
+  .sky,
+  .aurora,
+  .banners,
+  .no-print,
+  .hidden-nisse,
+  .skip-link {
+    display: none !important;
+  }
+  .panel {
+    box-shadow: none !important;
+    border: 0 !important;
+    background: none !important;
+    backdrop-filter: none !important;
+  }
+  .missions-page .panel:not(.print-area):not(#nisser) {
+    display: none;
+  }
+  #nisser > :not(.diploma) {
+    display: none;
+  }
+  body[data-print='wish'] #nisser,
+  body[data-print='diploma'] .wishlist {
+    display: none !important;
+  }
+  .wish-paper,
+  .diploma-inner {
+    box-shadow: none;
+  }
+}

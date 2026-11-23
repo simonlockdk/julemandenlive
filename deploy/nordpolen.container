@@ -1,0 +1,37 @@
+# Podman quadlet – Nordpolens Kontrolcentral
+# Installeres som brugerservice:
+#   mkdir -p ~/.config/containers/systemd
+#   cp deploy/nordpolen.container ~/.config/containers/systemd/
+#   systemctl --user daemon-reload && systemctl --user start nordpolen
+[Unit]
+Description=Nordpolens Kontrolcentral (juleportal)
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+Image=localhost/nordpolen:latest
+ContainerName=nordpolen
+# Kun på loopback – Apache er eneste indgang udefra
+PublishPort=127.0.0.1:3200:3200
+Volume=/var/www/julemandenlive.dk/data:/data
+Volume=/var/www/julemandenlive.dk/media:/media
+EnvironmentFile=%h/.config/nordpolen/nordpolen.env
+# Filer skrives som din egen bruger på værten
+UserNS=keep-id
+# Hærdning
+ReadOnly=true
+Tmpfs=/tmp
+NoNewPrivileges=true
+DropCapability=ALL
+# Loft over ressourcer, så siden aldrig kan tage hele serveren
+PodmanArgs=--memory=512m --pids-limit=256
+HealthCmd=node -e "fetch('http://127.0.0.1:3200/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+HealthInterval=30s
+
+[Service]
+Restart=always
+RestartSec=5
+TimeoutStartSec=120
+
+[Install]
+WantedBy=default.target

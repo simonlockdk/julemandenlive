@@ -1,0 +1,186 @@
+{
+  "doors": [
+    {
+      "day": 1,
+      "type": "message",
+      "title": "Velkommen til december!",
+      "body": "Hej med dig!\n\nI dag åbner julekalenderen, og her på Nordpolen er alle nisser mødt tidligt ind. Der er bagt pebernødder, tændt lys i værkstedet, og rensdyrene har fået ekstra havre.\n\nHver dag frem til juleaften gemmer der sig noget nyt bag en låge. Kom tilbage i morgen – vi glæder os til at se dig!",
+      "from": "Alle nisserne på Nordpolen"
+    },
+    {
+      "day": 2,
+      "type": "riddle",
+      "title": "Dagens nissegåde",
+      "question": "Jeg har ingen ben, men jeg kan stå på taget hele vinteren. Jeg har ingen mund, men jeg ryger alligevel, når det er koldt. Hvad er jeg?",
+      "answer": "En skorsten!"
+    },
+    {
+      "day": 3,
+      "type": "story",
+      "title": "Nissen, der var bange for mørke",
+      "body": "Der var engang en lille nisse ved navn Knap. Han boede på Nordpolen, hvor det er mørkt næsten hele vinteren – og Knap var bange for mørke.\n\nHver aften, når lamperne i værkstedet blev slukket, krøb han ned under dynen og talte stjernerne gennem vinduet.\n\nEn aften bankede det på døren. Det var Rudolf, rensdyret med den røde, lysende næse. \"Jeg skal ud og øve natteflyvning,\" sagde Rudolf. \"Vil du med? Jeg lyser vejen.\"\n\nKnap rystede, men sagde ja. De fløj over sneen, og nede under dem glimtede tusind små lys fra husene. Mørket var slet ikke tomt – det var fyldt med lys, man kun kan se, når det er mørkt.\n\nSiden den aften har Knap aldrig været bange for mørke igen. Nu er det ham, der tænder alle stjernerne på juletræet i værkstedet."
+    },
+    {
+      "day": 4,
+      "type": "tradition",
+      "title": "Hvorfor klipper vi julehjerter?",
+      "body": "Flettede julehjerter i rødt og hvidt papir er en ægte dansk tradition. Et af de ældste kendte julehjerter blev klippet af H.C. Andersen i 1860'erne!\n\nEt julehjerte flettes af to stykker papir, der klippes til strimler og væves ind i hinanden. Det kræver tålmodighed – men det er utroligt hyggeligt.\n\nPrøv selv: Fold to stykker papir i forskellige farver, klip dem i en bue foroven og tre strimler, og flet dem sammen. Hæng hjertet på juletræet!"
+    },
+    {
+      "day": 5,
+      "type": "game",
+      "title": "Nissernes vendespil",
+      "body": "Kan du finde alle de ens par? Nisserne har gemt julebillederne under kortene.",
+      "game": "memory"
+    },
+    {
+      "day": 6,
+      "type": "quiz",
+      "title": "Julequiz: Rensdyr",
+      "question": "Hvilke rensdyr har gevir om vinteren?",
+      "options": [
+        "Kun hanrensdyrene",
+        "Kun hunrensdyrene",
+        "Både han- og hunrensdyr",
+        "Ingen rensdyr har gevir"
+      ],
+      "correct": 2,
+      "answer": "Både han- og hunrensdyr har gevir! Hunnerne beholder ofte deres gevir hele vinteren, mens hannerne taber deres i efteråret."
+    },
+    {
+      "day": 7,
+      "type": "animation",
+      "title": "Snekuglen",
+      "body": "Ryst snekuglen og se sneen dale ned over Nordpolen.",
+      "animation": "snowglobe"
+    },
+    {
+      "day": 8,
+      "type": "story",
+      "title": "Den forsvundne bjælde",
+      "body": "En morgen opdagede nissen Bjelle-Bent, at én af kanens bjælder var væk. Uden den ville kanen ikke klinge rigtigt juleaften!\n\nBent ledte i stalden. Han ledte i værkstedet. Han ledte endda i julemandens kakaokop.\n\nTil sidst hørte han et svagt \"klingeling\" fra rensdyrstalden. Der lå Stjerneskud, det yngste rensdyr, og sov – med bjælden om halsen som et halsbånd.\n\n\"Den var så fin,\" mumlede Stjerneskud søvnigt. Bent lo og fik en idé. Nu har Stjerneskud sin helt egen lille bjælde – og kanen har fået sin tilbage."
+    },
+    {
+      "day": 9,
+      "type": "riddle",
+      "title": "Gåde fra værkstedet",
+      "question": "Hvad bliver vådere og vådere, jo mere det tørrer?",
+      "answer": "Et håndklæde! (Nisserne bruger mange efter snebold-kampene.)"
+    },
+    {
+      "day": 10,
+      "type": "message",
+      "title": "Hilsen fra stalden",
+      "body": "Kære ven!\n\nVi har trænet hele ugen. Lynfod har slået sin egen fartrekord, Danser har lært en ny dans, og Torden har spist en hel spand havre på rekordtid.\n\nTak fordi du kigger med på kameraerne. Vi vinker, når vi ser dig!",
+      "from": "Rensdyrene i stald 1"
+    },
+    {
+      "day": 11,
+      "type": "tradition",
+      "title": "Kravlenisser",
+      "body": "Kravlenisser er små papirnisser, der kravler op ad vægge, døre og lampeskærme i december. De blev populære i Danmark i 1940'erne, og mange familier har kravlenisser, der er gået i arv i flere generationer.\n\nNogle siger, at kravlenisserne holder øje med, om børnene er søde. Andre siger, at de bare godt kan lide at hænge ud på reolen."
+    },
+    {
+      "day": 12,
+      "type": "game",
+      "title": "Fang gaverne!",
+      "body": "Gaverne vælter ud af kanen! Klik eller tryk på dem, før de rammer sneen. Hvor mange kan du fange på 30 sekunder?",
+      "game": "catch"
+    },
+    {
+      "day": 13,
+      "type": "tradition",
+      "title": "Lucia",
+      "body": "Den 13. december fejres Lucia. Børn går i optog i lange hvide kjoler med lys i hænderne, og forrest går Lucia med en krone af lys i håret.\n\nTraditionen kom til Danmark fra Sverige under Anden Verdenskrig som et lys i mørket. I dag synger man \"Santa Lucia\" i skoler, børnehaver og kirker over hele landet.\n\nPå Nordpolen går nisserne også Luciaoptog – med lommelygter, så ingen skæg brænder."
+    },
+    {
+      "day": 14,
+      "type": "quiz",
+      "title": "Julequiz: Traditioner",
+      "question": "Hvad får man, hvis man finder den hele mandel i risalamanden?",
+      "options": [
+        "En mandelgave",
+        "Et ekstra stykke kage",
+        "Lov til at åbne alle gaverne først",
+        "En nisse som hjælper"
+      ],
+      "correct": 0,
+      "answer": "En mandelgave! Det kan være en marcipangris, et spil eller noget helt tredje."
+    },
+    {
+      "day": 15,
+      "type": "story",
+      "title": "Julemandens briller",
+      "body": "Julemanden havde mistet sine briller. Uden dem kunne han ikke læse ønskesedlerne – og der var mange tusinde, der ventede.\n\nNisserne ledte overalt. Til sidst fandt nissen Vims dem: De sad oven på julemandens eget hoved!\n\nJulemanden grinede så meget, at hans mave rystede. \"Ho ho ho! Tak, Vims. Som tak skal du få lov at læse de første ti ønskesedler højt.\"\n\nOg det gjorde Vims – med sin allerbedste oplæsningsstemme."
+    },
+    {
+      "day": 16,
+      "type": "animation",
+      "title": "Nordlys over Nordpolen",
+      "body": "I aften danser nordlyset over himlen. Læn dig tilbage og nyd det.",
+      "animation": "aurora"
+    },
+    {
+      "day": 17,
+      "type": "riddle",
+      "title": "Rensdyrets gåde",
+      "question": "Jeg kommer om natten uden at blive kaldt, og jeg forsvinder om dagen uden at blive stjålet. Hvad er jeg?",
+      "answer": "Stjernerne!"
+    },
+    {
+      "day": 18,
+      "type": "game",
+      "title": "Byg en snemand",
+      "body": "Hjælp nisserne med at bygge den flotteste snemand på gårdspladsen. Vælg hat, næse og tørklæde.",
+      "game": "snowman"
+    },
+    {
+      "day": 19,
+      "type": "tradition",
+      "title": "Negen til fuglene",
+      "body": "Det er en gammel dansk tradition at sætte et neg – et bundt korn – ud til fuglene juleaften. Så kan spurve, mejser og solsorte også holde jul.\n\nI gamle dage troede man, at det gav et godt høstår, hvis fuglene fik noget at spise ved juletid.\n\nDu kan selv hjælpe fuglene i vinter med et foderbræt eller en mejsebolle."
+    },
+    {
+      "day": 20,
+      "type": "message",
+      "title": "En hilsen fra julemanden",
+      "body": "Ho ho ho!\n\nNu er der ikke langt til juleaften. Kanen er poleret, rensdyrene er klar, og nisserne pakker de sidste gaver.\n\nHusk at være sød ved dem omkring dig – det er nemlig det, julen handler om. Og husk at lade lidt risengrød stå til nissen på loftet.\n\nVi ses snart!",
+      "from": "Julemanden"
+    },
+    {
+      "day": 21,
+      "type": "quiz",
+      "title": "Julequiz: Nordpolen",
+      "question": "Hvor lang er den korteste dag på året i Danmark omtrent – ved vintersolhverv?",
+      "options": [
+        "Cirka 4 timer",
+        "Cirka 7 timer",
+        "Cirka 10 timer",
+        "Cirka 12 timer"
+      ],
+      "correct": 1,
+      "answer": "Omkring 7 timer i København! På selve Nordpolen står solen slet ikke op i flere måneder."
+    },
+    {
+      "day": 22,
+      "type": "video",
+      "title": "Videohilsen fra værkstedet",
+      "body": "Nisserne har optaget en lille hilsen fra værkstedet. (Hvis der ikke er en video endnu, er nisserne stadig ved at klippe den!)",
+      "from": "Værkstedsnisserne"
+    },
+    {
+      "day": 23,
+      "type": "story",
+      "title": "Lillejuleaften på Nordpolen",
+      "body": "Lillejuleaften er der helt stille på Nordpolen. Værkstedet er ryddet, gaverne er pakket, og kanen står klar i garagen.\n\nNisserne sidder sammen i den store sal og spiser æbleskiver. Julemanden fortæller historier fra gamle juleaftener – om dengang en skorsten var for smal, og om dengang rensdyrene fløj i en snestorm og fandt vej efter lyden af kirkeklokker.\n\nTil sidst går alle i seng. For i morgen … i morgen er den store dag."
+    },
+    {
+      "day": 24,
+      "type": "animation",
+      "title": "Glædelig jul!",
+      "body": "Det er juleaften! Julemanden er på vej rundt om jorden. Følg kanen på kortet – og glædelig jul fra alle os på Nordpolen!",
+      "animation": "fireworks",
+      "from": "Julemanden, nisserne og rensdyrene"
+    }
+  ]
+}

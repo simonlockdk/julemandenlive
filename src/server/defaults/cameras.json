@@ -1,0 +1,191 @@
+{
+  "cameras": [
+    {
+      "id": "cam01",
+      "channel": 1,
+      "name": "Nissernes hovedværksted",
+      "location": "Værkstedshal A",
+      "description": "Nisser bygger og pakker legetøj ved samlebåndet og tjekker ønskesedler.",
+      "status": "online",
+      "source": {
+        "type": "scene",
+        "scene": "workshop"
+      },
+      "loop": true,
+      "fallbackScene": "workshop",
+      "events": {
+        "enabled": true,
+        "perHour": 4,
+        "types": [
+          "nisse-runs",
+          "gift-falls",
+          "lights-out",
+          "tech-glitch"
+        ]
+      }
+    },
+    {
+      "id": "cam02",
+      "channel": 2,
+      "name": "Rensdyrstalden",
+      "location": "Stald 1",
+      "description": "Rensdyrene spiser, hviler sig og bliver gjort klar til flyvning.",
+      "status": "online",
+      "source": {
+        "type": "scene",
+        "scene": "stable"
+      },
+      "loop": true,
+      "fallbackScene": "stable",
+      "events": {
+        "enabled": true,
+        "perHour": 4,
+        "types": [
+          "reindeer-closeup",
+          "nisse-runs",
+          "signal-loss"
+        ]
+      }
+    },
+    {
+      "id": "cam03",
+      "channel": 3,
+      "name": "Kanegaragen",
+      "location": "Hangar Nord",
+      "description": "Julemandens kane bliver serviceret, poleret og gjort klar.",
+      "status": "online",
+      "source": {
+        "type": "scene",
+        "scene": "garage"
+      },
+      "loop": true,
+      "fallbackScene": "garage",
+      "events": {
+        "enabled": true,
+        "perHour": 4,
+        "types": [
+          "nisse-runs",
+          "lights-out",
+          "tech-glitch"
+        ]
+      }
+    },
+    {
+      "id": "cam04",
+      "channel": 4,
+      "name": "Gavepakkeriet",
+      "location": "Pakkehal B",
+      "description": "Nisser sorterer, scanner og pakker gaver på det store pakkebånd.",
+      "status": "online",
+      "source": {
+        "type": "scene",
+        "scene": "packing"
+      },
+      "loop": true,
+      "fallbackScene": "packing",
+      "events": {
+        "enabled": true,
+        "perHour": 4,
+        "types": [
+          "gift-falls",
+          "nisse-runs",
+          "signal-loss"
+        ]
+      }
+    },
+    {
+      "id": "cam05",
+      "channel": 5,
+      "name": "Nordpolens gårdsplads",
+      "location": "Udendørs, mast 2",
+      "description": "Snevejr, julelys og nisser med pakker på vej mellem bygningerne.",
+      "status": "online",
+      "source": {
+        "type": "scene",
+        "scene": "yard"
+      },
+      "loop": true,
+      "fallbackScene": "yard",
+      "events": {
+        "enabled": true,
+        "perHour": 4,
+        "types": [
+          "nisse-runs",
+          "reindeer-closeup",
+          "signal-loss"
+        ]
+      }
+    },
+    {
+      "id": "cam06",
+      "channel": 6,
+      "name": "Julemandens kontor",
+      "location": "Hovedhuset, 1. sal",
+      "description": "Julemanden læser ønskesedler, drikker kakao og studerer verdenskortet.",
+      "status": "online",
+      "source": {
+        "type": "scene",
+        "scene": "office"
+      },
+      "loop": true,
+      "fallbackScene": "office",
+      "events": {
+        "enabled": true,
+        "perHour": 3,
+        "types": [
+          "nisse-runs",
+          "lights-out",
+          "tech-glitch"
+        ]
+      }
+    },
+    {
+      "id": "cam07",
+      "channel": 7,
+      "name": "Rensdyrenes træningsbane",
+      "location": "Fjeldbanen",
+      "description": "Rensdyrene øver sig i at trække kanen og lande præcist.",
+      "status": "online",
+      "source": {
+        "type": "scene",
+        "scene": "training"
+      },
+      "loop": true,
+      "fallbackScene": "training",
+      "events": {
+        "enabled": true,
+        "perHour": 4,
+        "types": [
+          "reindeer-closeup",
+          "nisse-runs",
+          "signal-loss"
+        ]
+      }
+    },
+    {
+      "id": "cam08",
+      "channel": 8,
+      "name": "Hemmeligt nissekamera",
+      "location": "Ukendt placering",
+      "description": "Psst … her sker der af og til mærkelige ting. Hold godt øje!",
+      "status": "online",
+      "source": {
+        "type": "scene",
+        "scene": "secret"
+      },
+      "loop": true,
+      "fallbackScene": "secret",
+      "events": {
+        "enabled": true,
+        "perHour": 8,
+        "types": [
+          "nisse-runs",
+          "lights-out",
+          "tech-glitch",
+          "signal-loss",
+          "reindeer-closeup"
+        ]
+      }
+    }
+  ]
+}
